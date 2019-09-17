@@ -2,7 +2,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var expressLayouts = require('express-ejs-layouts');
+// var expressLayouts = require('express-ejs-layouts');
 // var dbconfig = require('/Users/geonhoi/Desktop/')
 // var sql = require("sql-loader")("./sql")
 var logger = require('morgan');
@@ -33,7 +33,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // app.use(expressLayouts);
 
 require("./routes/v1.js")(app)
-app.use('/', require('./routes/view'));
+// app.use('/', require('./routes/view'));
 
 global.isEmpty = function(value) {
   if(value === '' || typeof value === 'undefined' || value === null ) {
