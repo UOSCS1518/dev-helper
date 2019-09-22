@@ -3,8 +3,8 @@ const router = express.Router()
 const languageDic = require('../../lib/language/index.js')
 
 router.post('/quesition', async (req, res) => {
-    const lang = req.body.actions.params.language
-    const func = req.body.actions.params.language_function
+    const lang = req.body.action.params.language
+    const func = req.body.action.params.language_function
     try {
         responseTemplate = languageDic[lang][func];
         responseBody = {
