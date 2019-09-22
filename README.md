@@ -1,6 +1,6 @@
 # Devi
 
-
+서버 URL : http://35.230.247.57:3011
 ---------------
 
 [Reference](https://i.kakao.com/docs/skill-response-format#detailparams) <- 클릭
