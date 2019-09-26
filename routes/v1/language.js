@@ -3,10 +3,13 @@ const router = express.Router()
 const languageDic = require('../../lib/language/index.js')
 
 router.post('/quesition', async (req, res) => {
-    const lang = req.body.action.params.language
-    const func = req.body.action.params.language_function
+    let lang = req.body.action.params.language
+    let func = req.body.action.params.language_function
     try {
-        console.log(lang, func)
+        if(languageDic[lang] === undefined || languageDic[lang][func] === undefined) {
+            lang = 'default'
+            func = 'default'
+        }
         responseTemplate = languageDic[lang][func]();
         responseBody = {
             version: '2.0',
@@ -19,9 +22,14 @@ router.post('/quesition', async (req, res) => {
 })
 
 router.get('/quesition/test', async (req, res) => {
-    const lang = req.query.language
-    const func = req.query.language_function
+    let lang = req.query.language
+    let func = req.query.language_function
     try {
+        if(languageDic[lang] === undefined || languageDic[lang][func] === undefined) {
+            lang = 'default'
+            func = 'default'
+        }
+        
         responseTemplate = languageDic[lang][func]();
         responseBody = {
             version: '2.0',
