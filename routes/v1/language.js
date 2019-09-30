@@ -4,7 +4,7 @@ const languageDic = require('../../lib/language/index.js')
 
 router.post('/question', async (req, res) => {
     let lang = req.body.action.params.language
-    let func = req.body.action.params.language_function
+    let func = req.body.action.params.category
     try {
         if(languageDic[lang] === undefined || languageDic[lang][func] === undefined) {
             lang = 'default'
@@ -23,7 +23,7 @@ router.post('/question', async (req, res) => {
 
 router.get('/question/test', async (req, res) => {
     let lang = req.query.language
-    let func = req.query.language_function
+    let func = req.query.category
     try {
         if(languageDic[lang] === undefined || languageDic[lang][func] === undefined) {
             lang = 'default'

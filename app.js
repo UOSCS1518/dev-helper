@@ -34,8 +34,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 require("./routes/v1.js")(app)
 // app.use('/', require('./routes/view'));
-app.all('/*', (req, res, next) => {
-  console.log(req.body)
+app.all('*', (req, res, next) => {
+  if(req.method === 'GET') {
+    console.log(req.query)
+  }
+  else {
+    console.log(req.body)
+  }
+  console.log('hello')
   next()
 })
 global.isEmpty = function(value) {
