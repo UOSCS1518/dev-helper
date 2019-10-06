@@ -24,6 +24,7 @@ router.post('/question', async (req, res) => {
 router.get('/question/test', async (req, res) => {
     let lang = req.query.language
     let func = req.query.category
+    console.log(lang, func)
     try {
         if(languageDic[lang] === undefined || languageDic[lang][func] === undefined) {
             lang = 'default'
