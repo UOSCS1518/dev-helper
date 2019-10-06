@@ -9,7 +9,7 @@ router.post('/question', async (req, res) => {
         if(isEmpty(lang)) {
             lang = 'default'
         }
-        if(languageDic[lang][func] === undefined) {
+        if(languageDic[lang][func] === undefined || isEmpty(func)) {
             func = 'default'
         }
         responseTemplate = languageDic[lang][func]();
@@ -31,7 +31,7 @@ router.get('/question/test', async (req, res) => {
         if(isEmpty(lang)) {
             lang = 'default'
         }
-        if(languageDic[lang][func] === undefined) {
+        if(languageDic[lang][func] === undefined || isEmpty(func)) {
             func = 'default'
         }
 
