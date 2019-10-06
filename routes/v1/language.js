@@ -6,8 +6,10 @@ router.post('/question', async (req, res) => {
     let lang = req.body.action.params.language
     let func = req.body.action.params.category
     try {
-        if(languageDic[lang] === undefined || languageDic[lang][func] === undefined) {
+        if(isEmpty(lang)) {
             lang = 'default'
+        }
+        if(languageDic[lang][func] === undefined) {
             func = 'default'
         }
         responseTemplate = languageDic[lang][func]();
@@ -26,8 +28,10 @@ router.get('/question/test', async (req, res) => {
     let func = req.query.category
     console.log(lang, func)
     try {
-        if(languageDic[lang] === undefined || languageDic[lang][func] === undefined) {
+        if(isEmpty(lang)) {
             lang = 'default'
+        }
+        if(languageDic[lang][func] === undefined) {
             func = 'default'
         }
 
