@@ -4,9 +4,6 @@
     },
     "array" : {
         "text" : "파이썬에는 Array가 존재하지 않고 대신 List가 존재합니다."
-    },
-    "function" : {
-        "text" : "파이썬에서 함수를 정의하는 방법은 이와 같습니다."
-        , "image" : "https://storage.cloud.google.com/devi_storage_1518/lani/python_function.png"
     }
 }
+ 
