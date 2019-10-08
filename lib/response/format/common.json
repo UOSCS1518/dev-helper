@@ -3,15 +3,18 @@
         "text" : "배열은 연관된 데이터를 모아서 관리하기 위해서 사용하는 데이터 타입이다."
     },
     "function" : {
-        "text" : "__language__에서 함수를 정의하는 방법은 이와 같습니다."
+        "title" : "__language__ 함수 정의법"
+        , "text" : "__language__에서 함수를 정의하는 방법은 이와 같습니다."
         , "image" : "https://storage.cloud.google.com/devi_storage_1518/lani/__language_____category__.png"
     },
     "data_type" : {
-        "text" : "__language__에서 사용하는 자료형에는 이와 같은 것들이 있습니다."
+        "title" : "__language__의 자료형(Data Type)"
+        ,"text" : "__language__에서 사용하는 자료형에는 이와 같은 것들이 있습니다."
         , "image" : "https://storage.cloud.google.com/devi_storage_1518/lani/__language_____category__.png"
     },
     "for_loop" : {
-        "text" : "__language__에서는 이과 같은 형태로 반복문을 사용합니다."
+        "title" : "__language__ 함수 정의법"
+        ,"text" : "__language__에서는 이과 같은 형태로 반복문을 사용합니다."
         , "image" : "https://storage.cloud.google.com/devi_storage_1518/lani/__language_____category__.png"
     }
 }
