@@ -2,6 +2,7 @@
     "operator": {
         "title": "C언어 연산자",
         "text": "C언어 연산자에 대한 설명입니다. 더 자세히 알아보고 싶은 정보를 클릭해주세요.",
+        "image" : "https://storage.cloud.google.com/devi_storage_1518/lani/c_img/operator.png?folder=true&hl=ko&organizationId=true",
         "buttons": [
             {
                 "action": "block",
@@ -14,10 +15,6 @@
                 "label": "말로 설명해줄께요!"
             }
         ]
-    },
-    "operator_img": {
-        "image" : "https://storage.cloud.google.com/devi_storage_1518/lani/c_img/operator.png?folder=true&hl=ko&organizationId=true",
-        "text" : ""
     },
     "operator_detail_simpleText" : {
         "text": "다음 중 궁금한 연산자를 선택해주세요!!"
