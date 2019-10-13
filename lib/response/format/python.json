@@ -11,15 +11,12 @@
         , "items" : [
             {
                 "title" : "리스트 자료형"
-                , "imageUrl" : ""
                 , "link" : "https://wikidocs.net/14"
             },
             {
                 "title" : "튜플 자료형"
-                , "imageUrl" : ""
                 , "link" : "https://wikidocs.net/15"
             }
         ]
     }
 }
- 

@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 const languageDic = require('../../lib/language/index.js')
-
+const util = require('util')
 router.post('/question', async (req, res) => {
     let lang = req.body.action.params.language
     let func = req.body.action.params.category
@@ -20,6 +20,7 @@ router.post('/question', async (req, res) => {
             version: '2.0',
             template: responseTemplate
         }
+        console.log(util.inspect(responseBody))
         res.status(200).send(responseBody)
     } catch (e) {
         console.log(e)
