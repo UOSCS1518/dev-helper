@@ -6,6 +6,7 @@ router.post('/question', async (req, res) => {
     let lang = req.body.action.params.language
     let func = req.body.action.params.category
     try {
+        console.log(`${req.body.userRequest.block.id} - ${req.body.userRequest.block.name}`)
         console.log(`language : ${lang}`)
         console.log(`category : ${func}`)
         if(isEmpty(lang)) {
