@@ -5,7 +5,7 @@
     "array" : {
         "text" : "파이썬에는 Array가 존재하지 않고 대신 List가 존재합니다."
     },
-    "data_type" : {
+    "dtype" : {
         "title" : "python의 자료형 목록입니다."
         , "image" : "https://storage.cloud.google.com/devi_storage_1518/lani/python_data_type.png"
         , "items" : [
@@ -23,10 +23,10 @@
             }
         ]
     },
-    "inner_function" : {
+    "lib_inner" : {
         "text" : "파이썬에는 다음과 같은 내장 함수들이 있습니다.\nabs, all, any, chr, dir, divmod, enumerate, eval, filter, hex, id, input, int, isinstance, len, list, map, max, min, oct, open, ord, pow, range, round, sorted, str, sum, tuple, type, zip\n자세한 설명 : https://wikidocs.net/32"
     },
-    "outer_function" : {
-        "text" : "파이썬에는 당므과 같은 외장 함수들이 있습니다.\nsys, pickle, os, shutil, glob, tempfile, time, calendar, random, webbrowser\n자세한 설명 : https://wikidocs.net/33"
+    "lib_outer" : {
+        "text" : "파이썬에는 다음과 같은 외장 함수들이 있습니다.\nsys, pickle, os, shutil, glob, tempfile, time, calendar, random, webbrowser\n자세한 설명 : https://wikidocs.net/33"
     }
 }
