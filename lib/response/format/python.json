@@ -27,6 +27,9 @@
         "text" : "파이썬에는 다음과 같은 내장 함수들이 있습니다.\nabs, all, any, chr, dir, divmod, enumerate, eval, filter, hex, id, input, int, isinstance, len, list, map, max, min, oct, open, ord, pow, range, round, sorted, str, sum, tuple, type, zip\n자세한 설명 : https://wikidocs.net/32"
     },
     "outer_function" : {
-        "text" : "파이썬에는 당므과 같은 외장 함수들이 있습니다.\nsys, pickle, os, shutil, glob, tempfile, time, calendar, random, webbrowser\n자세한 설명 : https://wikidocs.net/33"
+        "text" : "파이썬에는 다음과 같은 외장 함수들이 있습니다.\nsys, pickle, os, shutil, glob, tempfile, time, calendar, random, webbrowser\n자세한 설명 : https://wikidocs.net/33"
+    },
+    "module" : {
+        "text" : "모듈이란 다른 파이썬 프로그램에서 불러와 사용할 수 있도록 만든 함수나 변수 또는 클래스를 모아 놓은 파일입니다.\n자세한 설명 : https://wikidocs.net/29"
     }
 }
