@@ -141,14 +141,10 @@
         ,"buttons": [
             {
                 "action": "block"
-                ,"blockId": "c.ex_recursive"
+                ,"blockId": "fpwupn9lz0edpuubpyohmuyb"
                 ,"label": "recursive 예제"
             }
         ]
-    },
-    "ex_recursive" :{
-        "image" : "---------"
-        , "text": "recursive 사용법"
     },
     "func" :{
         "title": "C언어에서의 함수란?"
