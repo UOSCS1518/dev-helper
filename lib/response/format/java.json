@@ -11,7 +11,7 @@
           "father"                  : 
           { 
             "title" : "java@제임스 고슬링"
-            , "text" : "제임스 아서 고슬링(James Arthur Gosling)\n 캐나다의 소프트웨어 개발자. 자바를 최초 개발하여 '자바의 아버지'라 불리며, 가장 영향력 있는 프로그래머들 가운데 한 사람이다." 
+            , "text" : "제임스 아서 고슬링(James Gosling)\n 캐나다의 소프트웨어 개발자. 자바를 최초 개발하여 '자바의 아버지'라 불리며, 가장 영향력 있는 프로그래머들 가운데 한 사람이다." 
             , "image" : "----------"
             , "link" : {
                 "web": "https://ko.wikipedia.org/wiki/%EC%A0%9C%EC%9E%84%EC%8A%A4_%EA%B3%A0%EC%8A%AC%EB%A7%81"
@@ -52,9 +52,40 @@
   "### IN_LANG ###":{},
       "### CUSTOM ###":{},
           "### NAMING RULE ###":{},
+            "name_rule"             : {
+                "title": "자바의 이름 규칙에 대해 알아볼까요?"
+                ,"text": "자바의 이름 규칙에 대해서 알아봅시다. 변수와 상수, 그리고 함수의 명칭부터 블라블라블라 테스트 문구입니다."
+                ,"image" : "-----IMG-----"
+                ,"buttons": [
+                    {
+                        "action": "block"
+                        ,"blockId": "java.name_const"
+                        ,"label": "상수의 작명 관습"
+                    }
+                    ,{
+                        "action": "block"
+                        ,"blockId": "java.name_var"
+                        ,"label": "변수의 작명 관습"
+                    }
+                    ,{
+                        "action": "block"
+                        ,"blockId": "java.name_func"
+                        ,"label": "함수의 작명 관습"
+                    }
+                    ,{
+                        "action": "block"
+                        ,"blockId": "java.name_etc"
+                        ,"label": "기타 자바의 작명법 관습"
+                    }    
+                ]
+            },
+
+
+          
             "name_const"            : { "text" : "상수 이름 관습, const custom \n 대문자로 적는다. " },
             "name_var"              : { "text" : "변수 이름 관습, var custom \n 소문자로 적는다. " },
             "name_func"             : { "text" : "함수 이름 관습, func custom \n  잘 적는다. " },
+            "name_etc"              : { "text" : "기타 이름 관습, etc custom \n  잘 적는다. " },
 
       "### DATA ###":{},
           "### DATA TYPE ###":{},
