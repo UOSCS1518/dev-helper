@@ -37,21 +37,18 @@
         , "quickReplies" : [
             {
                 "label" : "자료형"
-                , "action" : "block"
+                , "action" : "message"
                 , "messageText" : "파이썬 자료형"
-                , "blockId" : "5d92088fb617ea0001b1caee"
             },
             {
                 "label" : "함수"
-                , "action" : "block"
+                , "action" : "message"
                 , "messageText" : "파이썬 함수"
-                , "blockId" : "5d92088fb617ea0001b1caee"
             },
             {
                 "label" : "모듈"
-                , "action" : "block"
+                , "action" : "message"
                 , "messageText" : "파이썬 모듈"
-                , "blockId" : "5d92088fb617ea0001b1caee"
             }
         ]
 
