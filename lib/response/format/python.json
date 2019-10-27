@@ -7,19 +7,16 @@
     },
     "dtype" : {
         "title" : "python의 자료형 목록입니다."
+        , "text" : "아래 버튼을 누르시면 설명 페이지로 이동합니다."
         , "image" : "https://storage.cloud.google.com/devi_storage_1518/lani/python_data_type.png"
-        , "items" : [
+        , "buttons" : [
             {
-                "title" : "리스트 자료형"
-                , "link" : {
-                    "web": "https://wikidocs.net/14"
-                }
+                "label" : "리스트 자료형"
+                , "webLinkUrl": "https://wikidocs.net/14"
             },
             {
-                "title" : "튜플 자료형"
-                , "link" : {
-                    "web": "https://wikidocs.net/15"
-                }
+                "label" : "튜플 자료형"
+                , "webLinkUrl": "https://wikidocs.net/15"
             }
         ]
     },
