@@ -4,7 +4,7 @@ const router = express.Router()
 
 router.post('/question', async (req, res) => {
     try {
-        const errorMessage = typeof req.query.errorMessage === "string" ? req.query.errorMessage.toLowerCase() : ''
+        const errorMessage = typeof req.body.action.params.errorMessage === "string" ? req.body.action.params.errorMessage.toLowerCase() : ''
         const responseBody = {
             version: '2.0',
             template: await eri.response(errorMessage)
