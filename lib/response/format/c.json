@@ -2,83 +2,26 @@
     "operator": {
         "title": "C언어 연산자"
         ,"text": "C언어 연산자에 대한 설명입니다. 더 자세히 알아보고 싶은 정보를 클릭해주세요."
-        ,"image" : "https://storage.cloud.google.com/devi_storage_1518/lani/c_img/operator.png"
         ,"buttons": [
             {
-                "action": "block"
-                ,"blockId": "c.operator_img"
-                ,"label": "사진으로 보시겠어요?"
+                "label": "사진으로 보시겠어요?"
+                ,"action": "message"
+                ,"messageText": "c언어 연산자 사진"
             }
             ,{
-                "action": "block"
-                ,"blockId": "c.operator_detail"
-                ,"label": "말로 설명해줄께요!"
+                "label": "연산자를 자세히 볼까요?"
+                ,"action": "message"
+                ,"messageText": "연산자를 자세히 알려주세요!"
             }
         ]
     },
-    "operator_detail_simpleText" : {
-        "text": "다음 중 궁금한 연산자를 선택해주세요!!"
+    "operator_img" : {
+        "image" : "https://storage.cloud.google.com/devi_storage_1518/lani/c_img/operator.png"
+        , "text": "연산자 사용법"
     },
-    "operator_detail_quick" :[
-        {
-            "label": "=",
-            "action": "message",
-            "messageText": "대입연산자입니다."                    
-
-        },
-        {
-            "label": "+, -, /, %, *",
-            "action": "message",
-            "messageText": "산술연산자입니다."                    
-
-        },
-        {
-            "label": "!, ~, ++, --, *, &,",
-            "action": "message",
-            "messageText": "단항연산자입니다."                    
-
-        },
-        {
-            "label": "&, ^, |",
-            "action": "message",
-            "messageText": "논리연산자입니다."                    
-
-        },
-        {
-            "label": ">>, <<",
-            "action": "message",
-            "messageText": "이동연산자입니다."                    
-
-        },
-        {
-            "label": "<, >, <=, >=, ==, !=",
-            "action": "message",
-            "messageText": "관계연산자입니다."                    
-
-        },
-        {
-            "label": "&&, ||",
-            "action": "message",
-            "messageText": "논리연산자입니다."                    
-
-        },
-        {
-            "label": "?:",
-            "action": "message",
-            "messageText": "삼항연산자입니다."                    
-
-        },
-        {
-            "label": "*=, +=, -=....",
-            "action": "message",
-            "messageText": "복합대입연산자입니다."                    
-
-        } 
-    ],
     "comments" : {
         "text":  "c언어에서 주석을 사용하려면 한줄주석은 '//'뒤에 붙이고 여러줄 주석은 '/*'와 '*/'사이에 넣으면 됩니다."
     },
-    
     "printf" : {
         "title": "printf 함수 사용법"
         ,"text": "printf() 함수는 c언어의 표준 출력 함수로, 여러 종류의 데이터를 다양한 서식에 맞추어 출력할 수 있습니다."
@@ -146,7 +89,7 @@
             }
         ]
     },
-    "func" :{
+    "function" :{
         "title": "C언어에서의 함수란?"
         ,"text": "함수는 특정 기능을 하는 코드를 하나로 묶어 명령어처럼 사용할 수 있게 해줍니다. 반복되는 작업을 함수로 묶는다면 코드의 효율성을 키울 수 있겠죠! 함수를 선언하는 식은 (반환형) (함수명(매개변수)){함수의 몸체}로 구성됩니다. 각각을 자세히 알아볼까요?"
         ,"image" : "--"
@@ -168,7 +111,7 @@
             }
         ]
     },
-    "func_returnvalue" :{
+    "return" :{
         "title": "함수의 반환형이란?"
         ,"text": "반환형이란 함수의 실행을 마친 뒤 돌려주는 결과값의 자료형입니다. 실제로 반환되는 값은 반환값, 리턴값이라 하고 만약 반환이 필요없을 때는 void 자료형을 써줍니다."
         ,"image" : "--"
@@ -273,12 +216,12 @@
             }    
         ]
     },
-    "control_ifelse" : {
+    "cd_if" : {
         "title": "if else문은 어떻게 사용할까요?"
         ,"text": "if {}안에는 처음에 검사할 조건이 들어가요. 계속 조건을 검사하고 싶다면 else if{}를 반복적으로 쓰고 괄호에 계속 조건을 추가해주면 돼요! 마지막까지 조건에 걸리지 않은 수행은 마지막에 오는 else{}로 잡을 수도 있고, 이 부분을 쓰지 않으면 별도의 처리를 하지 않을 수도 있어요!"
         ,"image" : "--"
     },
-    "control_switch" : {
+    "cd_switch" : {
         "title": "switch문은 어떻게 사용할까요?"
         ,"text": "switch-case문을 사용하려면 우선 switch()의 괄호 안에 조건을 판단할 변수를 넣어줘야 해요. 각 조건에 따른 경우의 수를 case : 뒤에 넣어주면 됩니다. 아래 예제를 보며 자세히 알아볼까요?"
         ,"image" : "--"
@@ -303,17 +246,17 @@
         "image" : "---------"
         , "text": "switch_c 사용법"
     },
-    "control_forloop" : {
+    "lp_for" : {
         "title": "for문은 어떻게 사용할까요?"
         ,"text": "for문을 사용한다면 반복자(iterator)를 넣어서 원하는 만큼 출력을 내보낼 수 있습니다. 형식은 for(초기값;탈출조건;증감식){실행할 코드}에요!"
         ,"image" : "--"
     },
-    "control_while" : {
+    "lp_while" : {
         "title": "while문은 어떻게 사용할까요?"
         ,"text": "while loop는 조건을 주고 조건이 달성될 때까지  코드를 계속 반복시키는 반복문이에요. while(조건문){실행할 코드}의 형식으로 사용됩니다. 이 코드는 조건에 맞지 않으면 한번도 실행되지 않을 수 있어요. 반면 do while 문은 일단 코드를 한번 실행시키고 다음 턴부터 조건을 검사해 실행시킵니다. 형식은 do{실행할 코드}while(조건문)이에요!"
         ,"image" : "--"
     },
-    "stdlib" :{
+    "library" :{
         "title": "표준 라이브러리가 무엇인가요?"
         ,"text": "C 표준 라이브러리는 C언어를 구현할 때 여러 코드에서 통용될 수 있도록 만들어진 라이브러리로, ANCI C 표준에 의해 명시되었습니다. 이것을 응용 프로그램에서 사용할 수 있도록 API가 헤더 파일들에 정의되어 있습니다."
         ,"image" : "--"
@@ -328,7 +271,7 @@
     "stdlib_header" : {
         "text": "헤더파일이란 비슷한 역할을 하는 함수의 정의를 묶어놓은 것으로, 표준 라이브러리 함수들이 이 위치에 선언되어 있습니다. 일반적으로 다른 소스 파일 속의 첫 부분에 포함됩니다. 우리가 주로 쓰는 헤더파일은 <stdio.h>라고 하는 표준 입출력 함수입니다. 자세한 정보가 알고 싶으시다면 아래 링크를 참고해 주세요! https://ko.wikipedia.org/wiki/C_%ED%91%9C%EC%A4%80_%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC"
     },
-    "namingrule" :{
+    "name_rule" :{
         "text" : "코드의 일관성을 위해 가장 중요한 것은 이름 규칙을 따르는 것입니다. 이름의 스타일이 있다면 이를 통해 요소의 선언부를 찾지 않고도 해당 요소가 어떤 것인지 바로 알 수 있기 때문이죠! 자세한 naming rule은 아래 링크를 참고해 주세요.   https://yeop-blog.github.io/2017/09/29/2017-09-29-old-blog-post29/"
     },
     "struct" :{
@@ -347,7 +290,7 @@
         "image" : "---------"
         , "text": "structure 사용법"
     },
-    "array" :{
+    "struct_array" :{
         "title": "배열이 무엇인지 알아볼까요?"
         ,"text": "학생 100명의 테스트 점수를 받고 싶다면 int형 변수를 100개 선언하는 것이 좋을까요?? 다행이도 우리에겐 배열이 있습니다! 우리는 test[100]이라는 문장을 이용해 손쉽게 100명의 시험점수를 저장할 수 있어요!"
         ,"image" : "--"
