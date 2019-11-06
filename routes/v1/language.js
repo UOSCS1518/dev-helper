@@ -25,6 +25,18 @@ router.post('/question', async (req, res) => {
         res.status(200).send(responseBody)
     } catch (e) {
         console.log(e)
+        res.status(200).send({
+            "version": "2.0",
+            "template": {
+                "outputs": [
+                    {
+                        "simpleText": {
+                            "text": "잘 모르겠어요.."
+                        }
+                    }
+                ]
+            }
+        })
     }
 })
 
