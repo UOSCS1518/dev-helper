@@ -2,6 +2,8 @@ const express = require('express')
 const router = express.Router()
 const languageDic = require('../../lib/language/index.js')
 const util = require('util')
+const fs = require('fs')
+const filePath = '../../laniLog.txt'
 router.post('/question', async (req, res) => {
     let lang = req.body.action.params.language
     let func = req.body.action.params.category
@@ -17,6 +19,13 @@ router.post('/question', async (req, res) => {
             func = 'default'
         }
         responseTemplate = languageDic[lang][func]();
+
+        if(typeof responseTemplate === 'undefined') {
+            throw {
+                lang : lang
+                , func : func
+            }
+        }
         responseBody = {
             version: '2.0',
             template: responseTemplate
@@ -25,13 +34,20 @@ router.post('/question', async (req, res) => {
         res.status(200).send(responseBody)
     } catch (e) {
         console.log(e)
+        fs.writeFileSync(filePath, e,'utf8')
+        fs.writeFileSync(filePath, '\n', 'utf8')
+        
+        let text = "잘 모르겠어요.."
+        if(typeof e.lang !== 'undefined') {
+            text = `${e.lang}의 ${e.func}에 대해 아직 잘 모르겠네요ㅠㅠ\n금방 공부해서 알도록 할게요!`
+        }
         res.status(200).send({
             "version": "2.0",
             "template": {
                 "outputs": [
                     {
                         "simpleText": {
-                            "text": "잘 모르겠어요.."
+                            "text": text
                         }
                     }
                 ]
