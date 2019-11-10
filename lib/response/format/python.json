@@ -50,6 +50,22 @@
                 , "messageText" : "파이썬 모듈"
             }
         ]
-
+    },
+    "regexp" : {
+        "title" : "python의 정규표현식"
+        , "text" : "정규표현식은 필요한 문자열 집합(패턴)을 지정하기 위해 쓰이는 식입니다.\n-선언법-\nimport re\np = re.compile(정규표현식)\nm = p.match(문자열)\n\n^ 줄이나 문자열의 시작점과 일치시킨다.\n$ 줄이나 문자열의 끝과 일치시킨다.\n. : 일반적으로 새 줄을 제외한 모든 어떠한 문자열과도 일치한다.\n( ) : 일련의 패턴 요소들을 하나의 요소로 묶는다.\n+ 1번 이상 발생하는 패턴과 일치시킨다.\n? 0~1번 발생하는 패턴과 일치시킨다.\n* 0번 이상 발생하는 패턴과 일치시킨다.\n{M,N} 최소 M번, 최대 N번 발생되는 패턴과 일치시킨다.\n{M,N} 최소 M번, 최대 N번 발생되는 패턴과 일치시킨다.\n"
+        , "image" : "https://storage.cloud.google.com/devi_storage_1518/lani/background.jpg"
+        , "buttons" : [
+            {
+                "label" : "파이썬 정규표현식"
+                , "action" : "webLink"
+                , "webLinkUrl" : "https://wikidocs.net/4308"
+            },
+            {
+                "label" : "정규표현식 정리"
+                , "action" : "webLink"
+                , "webLinkUrl" : "https://soooprmx.com/archives/7718"
+            }
+        ]
     }
 }
