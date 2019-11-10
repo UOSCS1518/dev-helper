@@ -4,8 +4,20 @@ const router = express.Router()
 const fs = require('fs')
 const filePath = '../../EriLog.txt'
 router.post('/question', async (req, res) => {
+    let errorMessage = typeof req.body.action.params.errorMessage === "string" ? req.body.action.params.errorMessage.toLowerCase() : ''
     try {
-        const errorMessage = typeof req.body.action.params.errorMessage === "string" ? req.body.action.params.errorMessage.toLowerCase() : ''
+        let errorContents = errorMessage.split('\n')
+        errorContents = errorContents.filter(value => {
+            const val = value.trim()
+            if(val[0] === 'a' && val[1] === 't') {
+                return ''
+            }
+
+            return val
+        })
+
+        errorMessage = errorContents.join('\n')
+
         const responseBody = {
             version: '2.0',
             template: await eri.response(errorMessage)
